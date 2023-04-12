@@ -18,7 +18,7 @@ function Login() {
     }
 
     setValidated(true);
-    if (email == "admin@gmail.com" && password == "admin") {
+    if (email === "admin@gmail.com" && password === "admin") {
       history.push("/dashboard");
     } else {
       history.push("/");

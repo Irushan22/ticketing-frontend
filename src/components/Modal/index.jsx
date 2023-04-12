@@ -31,7 +31,7 @@ function TicketModal({ open, closebtnEvent, singleTicket, allTickets }) {
         reason,
         priority,
       };
-      const response = await axios.post(`http://localhost:3000/ticket`, data);
+      await axios.post(`http://localhost:3000/ticket`, data);
     } catch (error) {
       console.error(error);
     }
